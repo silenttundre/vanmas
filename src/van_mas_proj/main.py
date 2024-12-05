@@ -12,9 +12,9 @@ def run():
     Run the crew.
     """
     inputs = {
-        'Product_Category': '',  # Consumer input about product category
-        'Target_Brands': '',  # Initial list of products to consider
-        'Key_Features': ''  # Specific consumer requirements and desired features
+        'Product_Category': 'Cereal',  # Consumer input about product category
+        'Target_Brands': 'Honey Bunches of Oats, Kellogg''s',  # Initial list of products to consider
+        'Key_Features': 'Low in sugar, No artificial colors or flavors, No preservatives'  # Specific consumer requirements and desired features
     }
     MyMasCrew().crew().kickoff(inputs=inputs)
 
