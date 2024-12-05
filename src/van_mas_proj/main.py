@@ -12,7 +12,9 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs'
+        'Product_Category': '',  # Consumer input about product category
+        'Target_Brands': '',  # Initial list of products to consider
+        'Key_Features': ''  # Specific consumer requirements and desired features
     }
     MyMasCrew().crew().kickoff(inputs=inputs)
 

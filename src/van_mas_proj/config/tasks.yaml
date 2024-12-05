@@ -1,17 +1,41 @@
 research_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Conduct a thorough research about {Product_Category} ingredients for {Target_Brands}, 
+    focusing on {Key_Features}. Systematically gather product ingredient lists, 
+    validate accuracy of collected information, and ensure comprehensive data sourcing.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
+    A standardized ingredient list spreadsheet for {Target_Brands} including:
+    - Comprehensive ingredient details
+    - Preliminary allergen risk assessment
+    - Data validation log
+    - Cross-referenced information sources
+    - Standardized ingredient terminology
   agent: researcher
 
-reporting_task:
+analysis_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Scientifically assess ingredient safety profiles for {Product_Category} from {Target_Brands},
+    with a specific focus on {Key_Features}. Evaluate ingredients against health standards, 
+    detect potential health risks, and perform comprehensive nutritional comparative analysis.
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A detailed ingredient safety report containing:
+    - Comprehensive nutritional impact analysis
+    - Additive risk classification
+    - Evidence-based health risk evaluation
+    - Comparative nutritional breakdown for {Target_Brands}
+    - Detailed assessment of {Key_Features} related health implications
+  agent: analysis_agent
+
+recommendation_task:
+  description: >
+    Generate personalized health recommendations for {Product_Category}, 
+    focusing on {Target_Brands} and {Key_Features}. Develop tailored allergen avoidance 
+    strategies and create context-aware product alternatives.
+  expected_output: >
+    A comprehensive personalized recommendation report including:
+    - Tailored product recommendations
+    - Allergen-free alternative suggestions
+    - Personalized nutrition guidance
+    - Health optimization strategies specific to {Target_Brands}
+    - Actionable insights addressing {Key_Features}
+  agent: recommendation_agent
