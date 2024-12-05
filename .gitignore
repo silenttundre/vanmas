@@ -1,0 +1,4 @@
+.env
+.venv
+van_mas_proj
+__pycache__/
