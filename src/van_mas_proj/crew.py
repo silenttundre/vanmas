@@ -14,7 +14,7 @@ class MyMasCrew():
     @agent
     def researcher(self) -> Agent:
         return Agent(
-            config=self.agents_config['researcher'],
+            config=self.agents_config["researcher"],
             verbose=True
             # Uncomment and add tools if needed
             # tools=[SerperDevTool()],
@@ -23,35 +23,35 @@ class MyMasCrew():
     @agent
     def analysis_agent(self) -> Agent:
         return Agent(
-            config=self.agents_config['analysis_agent'],
+            config=self.agents_config["analysis_agent"],
             verbose=True
         )
 
     @agent
     def recommendation_agent(self) -> Agent:
         return Agent(
-            config=self.agents_config['recommendation_agent'],
+            config=self.agents_config["recommendation_agent"],
             verbose=True
         )
 
     @task
     def research_task(self) -> Task:
         return Task(
-            config=self.tasks_config['research_task'],
+            config=self.tasks_config["research_task"],
             agent=self.researcher()
         )
 
     @task
     def analysis_task(self) -> Task:
         return Task(
-            config=self.tasks_config['analysis_task'],
+            config=self.tasks_config["analysis_task"],
             agent=self.analysis_agent()
         )
 
     @task
     def recommendation_task(self) -> Task:
         return Task(
-            config=self.tasks_config['recommendation_task'],
+            config=self.tasks_config["recommendation_task"],
             agent=self.recommendation_agent()
         )
 
