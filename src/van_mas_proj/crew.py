@@ -11,6 +11,9 @@ from crewai.project import CrewBase, agent, crew, task
 class MyMasCrew():
     """MyMas crew for ingredient and nutritional analysis"""
 
+    agents_config = "config/agents.yaml"
+    tasks_config = "config/tasks.yaml"
+
     @agent
     def researcher(self) -> Agent:
         return Agent(
