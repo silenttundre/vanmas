@@ -22,10 +22,10 @@ crewai install
 
 **Add your `OPENAI_API_KEY` into the `.env` file**
 
-- Modify `src/van_mas_proj/config/agents.yaml` to define your agents
-- Modify `src/van_mas_proj/config/tasks.yaml` to define your tasks
-- Modify `src/van_mas_proj/crew.py` to add your own logic, tools and specific args
-- Modify `src/van_mas_proj/main.py` to add custom inputs for your agents and tasks
+- Modify `src/vanmas/config/agents.yaml` to define your agents
+- Modify `src/vanmas/config/tasks.yaml` to define your tasks
+- Modify `src/vanmas/crew.py` to add your own logic, tools and specific args
+- Modify `src/vanmas/main.py` to add custom inputs for your agents and tasks
 
 ## Running the Project
 
@@ -35,13 +35,13 @@ To kickstart your crew of AI agents and begin task execution, run this from the 
 $ crewai run
 ```
 
-This command initializes the van_mas_proj Crew, assembling the agents and assigning them tasks as defined in your configuration.
+This command initializes the vanmas Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
 This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
 
 ## Understanding Your Crew
 
-The van_mas_proj Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+The vanmas Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
 
 ## Support
 
