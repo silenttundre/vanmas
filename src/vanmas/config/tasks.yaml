@@ -1,0 +1,41 @@
+research_task:
+  description: >
+    Conduct a thorough research about {Product_Category} ingredients for {Target_Brands}, 
+    focusing on {Key_Features}. Systematically gather product ingredient lists, 
+    validate accuracy of collected information, and ensure comprehensive data sourcing.
+  expected_output: >
+    A standardized ingredient list spreadsheet for {Target_Brands} including:
+    - Comprehensive ingredient details
+    - Preliminary allergen risk assessment
+    - Data validation log
+    - Cross-referenced information sources
+    - Standardized ingredient terminology
+  agent: researcher
+
+analysis_task:
+  description: >
+    Scientifically assess ingredient safety profiles for {Product_Category} from {Target_Brands},
+    with a specific focus on {Key_Features}. Evaluate ingredients against health standards, 
+    detect potential health risks, and perform comprehensive nutritional comparative analysis.
+  expected_output: >
+    A detailed ingredient safety report containing:
+    - Comprehensive nutritional impact analysis
+    - Additive risk classification
+    - Evidence-based health risk evaluation
+    - Comparative nutritional breakdown for {Target_Brands}
+    - Detailed assessment of {Key_Features} related health implications
+  agent: analysis_agent
+
+recommendation_task:
+  description: >
+    Generate personalized health recommendations for {Product_Category}, 
+    focusing on {Target_Brands} and {Key_Features}. Develop tailored allergen avoidance 
+    strategies and create context-aware product alternatives.
+  expected_output: >
+    A comprehensive personalized recommendation report including:
+    - Tailored product recommendations
+    - Allergen-free alternative suggestions
+    - Personalized nutrition guidance
+    - Health optimization strategies specific to {Target_Brands}
+    - Actionable insights addressing {Key_Features}
+  agent: recommendation_agent
