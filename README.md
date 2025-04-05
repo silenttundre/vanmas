@@ -2,6 +2,9 @@
 
 Welcome to the Vanmas Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
+## Purpose
+As a health-conscious parent, ensuring that my children are eating the right foods is a top priority. The CrewAI project was created to help evaluate the nutritional value of food products and determine whether they are beneficial or harmful to our health. By analyzing ingredients and key product features, CrewAI empowers parents like me to make informed decisions about the foods we feed our children. The system considers factors like product category, target brands, and key features—such as low sugar, no artificial colors or flavors, and no preservatives. For example, when looking at breakfast cereals like Honey Bunches of Oats or Kellogg's, CrewAI helps assess if these products meet the health standards I set for my family. This way, I can confidently choose the best food options for my kids' growth and development.
+
 ## Installation
 
 Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
